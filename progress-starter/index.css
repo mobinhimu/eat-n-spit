@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+main {
+  background-color: #fff;
+  padding: 12px;
+  height: 100vh;
+  max-width: 100%;
+}
+button {
+  border: none;
+  width: 90px;
+  padding: 4px;
+  border-radius: 6px;
+  background-color: rgb(194, 90, 235);
+  cursor: pointer;
+}
+.icon {
+  cursor: pointer;
+  height: 2.6rem;
+  color: #adedf1;
+}
+.edit {
+  height: 2.6rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 14px;
+}
+.header {
+  padding-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+.header p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  user-select: none;
+  cursor: pointer;
+  color: #037bff;
+}
+
+.dashboard {
+  padding-top: 12px;
+}
+.dashboard h3 {
+  font-size: 2rem;
+  letter-spacing: 1.3px;
+  padding-bottom: 6px;
+}
+.progress-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+  user-select: none;
+}
+.progress-item {
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.progress-item:hover,
+.progress-item:focus {
+  /* border: 2px solid #f8d7da; */
+  box-shadow: 0 0 0 1px #dc3545;
+}
+
+.progress-item::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 49%;
+  background: #000;
+}
+.name,
+.how-many,
+.percentage {
+  position: relative;
+}
+.name {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  padding-bottom: 4px;
+}
+
+section.modal-sec {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.modal {
+  background-color: #e9ecef;
+  padding: 24px;
+  border-radius: 6px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+form input {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+form button {
+  width: 100px;
+  padding: 10px 0;
+  margin: 8px auto;
+}
+
+/* color */
+.red {
+  background-color: #f8d7da;
+}
+.red::before {
+  background-color: #dc3545;
+}
+
+.green {
+  background-color: #d1e7dd;
+}
+.green::before {
+  background-color: #198754;
+}
+.teal {
+  background-color: #d2f4ea;
+}
+.teal::before {
+  background-color: #1aa179;
+}
+.black {
+  background-color: #e9ecef;
+}
+.black::before {
+  background-color: #495057;
+}
+
+.indigo {
+  background-color: #e0cffc;
+}
+
+@media only screen and (min-width: 576px) {
+  main {
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+}
